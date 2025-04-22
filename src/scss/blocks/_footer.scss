@@ -1,7 +1,98 @@
-.footer{
-    background-color: rgb(140, 190, 32);
-    padding: 100px 0;
-    font-size: 38px;
-    color: #fff;
-    text-align: center;
-}
+.footer {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  /* Верхній блок */
+  .footer-top {
+    background-color: #022e30;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px 40px;
+    gap: 60px;
+  }
+  
+  .footer-left {
+    max-width: 367px;
+  }
+  
+  .footer-logo {
+    width: 237px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .footer-socials a {
+    display: inline-block;
+    margin-right: 12px;
+    background-color: #02393f;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .footer-socials img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Колонки */
+  .footer-columns {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .footer-col h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #5cecc3;
+  }
+  
+  /* Нижній блок */
+  .footer-bottom {
+    background-color: #5cecc3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
