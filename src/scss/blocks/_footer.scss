@@ -3,7 +3,6 @@
     color: white;
   }
   
-  /* Верхній блок */
   .footer-top {
     background-color: #022e30;
     display: flex;
@@ -17,9 +16,19 @@
   }
   
   .footer-logo {
-    width: 237px;
-    height: auto;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      color: #5CECC3;
+      font-weight: 400;
+    }
   }
   
   .footer-left p {
@@ -29,20 +38,31 @@
     color: #ccc;
   }
   
+  .footer-socials {
+    display: flex;
+    gap: 12px;
+  }
+  
   .footer-socials a {
-    display: inline-block;
-    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     background-color: #02393f;
-    padding: 10px;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #035c63;
+    }
   }
   
   .footer-socials img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
   
-  /* Колонки */
   .footer-columns {
     display: flex;
     gap: 60px;
@@ -75,7 +95,6 @@
     color: #5cecc3;
   }
   
-  /* Нижній блок */
   .footer-bottom {
     background-color: #5cecc3;
     display: flex;
@@ -94,5 +113,39 @@
   
   .footer-links a:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+
+    .footer-left {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .footer-logo {
+      justify-content: center;
+    }
+
+    .footer-socials {
+      justify-content: center;
+    }
+
+    .footer-columns {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      padding: 20px;
+    }
   }
   

@@ -1,0 +1,111 @@
+.doctors {
+  padding: 5rem 0;
+  background-color: #002829;
+  color: #fff;
+
+  &-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(15px, 2vw, 30px);
+  }
+
+  &__content {
+    max-width: 588px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: clamp(3rem, 6vw, 4rem);
+  }
+
+  &__label {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  &__description {
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 3vw, 2rem);
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 800px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+    }
+  }
+
+  .doctor-card {
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    overflow: hidden;
+
+    &__image {
+      width: 100%;
+      aspect-ratio: 1.2;
+      background-color: #000000;
+      object-fit: cover;
+    }
+
+    &__social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #002829;
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+
+      svg {
+        width: clamp(20px, 2vw, 24px);
+        height: clamp(20px, 2vw, 24px);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__info {
+      padding: clamp(1rem, 3vw, 1.5rem);
+      text-align: center;
+    }
+
+    &__name {
+      font-size: clamp(18px, 2vw, 20px);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    &__specialty {
+      font-size: clamp(14px, 1.5vw, 16px);
+      color: #666;
+    }
+  }
+}

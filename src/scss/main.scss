@@ -1,2 +1,12 @@
+@use "base";
 @use "./blocks/header";
+@use "./blocks/hero";
+@use "./blocks/about";
+@use "./blocks/statistic";
+@use "./blocks/service";
+@use "./blocks/doctors";
+@use "./blocks/testimonials";
+@use "./blocks/works";
 @use "./blocks/footer";
+@use "media";
+

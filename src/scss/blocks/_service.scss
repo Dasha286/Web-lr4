@@ -1,0 +1,127 @@
+.service {
+  padding: 5rem 0;
+  background-color: #fff;
+
+  &__content {
+    display: grid;
+    grid-template-columns: minmax(auto, 588px) 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  &__info {
+    max-width: 588px;
+  }
+
+  &__label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+    margin: 0 0 1.5rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__image {
+    width: 300px;
+    height: 200px;
+
+    &--dark {
+      background-color: #002829;
+    }
+
+    &--mint {
+      width: 84px;
+      height: 84px;
+      margin-left: -30px;
+      background-color: #5CECC3;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-bottom: 1px solid #E5E7EB;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    background-color: #002829;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      color: #5CECC3;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    padding-top: 0.5rem;
+  }
+
+  &__item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 0.5rem;
+  }
+
+  &__item-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #002829;
+    border-radius: 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: 1rem;
+
+  }
+}

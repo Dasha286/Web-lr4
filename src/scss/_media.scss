@@ -1,0 +1,273 @@
+/* Desktop First */
+
+/* Large Devices (менше 1200px) */
+@media screen and (max-width: 1200px) {
+  .header-container,
+  .hero-container,
+  .doctors-container {
+    padding: 0 2rem;
+  }
+
+  .hero {
+    &__content {
+      max-width: 500px;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__decoration {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__squares {
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+    }
+
+    .square {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .service {
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    &__info {
+      max-width: 100%;
+    }
+
+    &__list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .doctors {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Medium Devices (менше 992px) */
+@media screen and (max-width: 992px) {
+  .header {
+    &__nav {
+      gap: 1.5rem;
+    }
+  }
+
+  .hero {
+    &__content {
+      max-width: 450px;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__button {
+      width: 240px;
+      height: 56px;
+      font-size: 16px;
+    }
+
+    &__decoration {
+      width: 200px;
+      height: 200px;
+    }
+
+    &__squares {
+      grid-template-columns: repeat(3, 65px);
+      grid-template-rows: repeat(3, 65px);
+    }
+
+    .square {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  .service {
+    padding: 4rem 0;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__image-wrapper {
+      display: none;
+    }
+  }
+
+  .doctors {
+    padding: 4rem 0;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Small Devices (менше 768px) */
+@media screen and (max-width: 768px) {
+  .header-container,
+  .hero-container,
+  .doctors-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero {
+    &__content {
+      padding-top: 80px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__description {
+      font-size: 14px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+
+    &__decoration {
+      display: none;
+    }
+  }
+
+  .service {
+    padding: 3rem 0;
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__description {
+      margin-bottom: 2rem;
+    }
+
+    &__item {
+      padding: 1.25rem;
+    }
+  }
+
+  .doctors {
+    padding: 3rem 0;
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .doctor-card {
+      &__image {
+        height: 280px;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices (менше 576px) */
+@media screen and (max-width: 576px) {
+  .header-container,
+  .hero-container,
+  .doctors-container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    &__content {
+      padding-top: 60px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__label {
+      font-size: 16px;
+    }
+
+    &__button {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+
+  .service {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    &__text {
+      padding-top: 0;
+    }
+
+    &__button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .doctors {
+    &__title {
+      font-size: 2rem;
+    }
+
+    .doctor-card {
+      &__image {
+        height: 240px;
+      }
+
+      &__info {
+        padding: 1.25rem;
+      }
+    }
+  }
+}
+
+/* Mobile First (якщо потрібно) */
+/*
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}
+*/ 

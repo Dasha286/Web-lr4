@@ -1,0 +1,172 @@
+.testimonials {
+  padding: 5rem 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 456px;
+    gap: 4rem;
+    align-items: start;
+    padding: 0 clamp(20px, 4vw, 40px);
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 400px;
+      gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__text-content {
+    max-width: 600px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__label {
+    font-size: clamp(14px, 1.5vw, 1rem);
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: clamp(32px, 5vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+    margin: 0;
+    margin-bottom: 4rem;
+    max-width: 560px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+      max-width: 100%;
+    }
+  }
+
+  &__quote {
+    position: relative;
+  }
+
+  &__icon {
+    margin-bottom: 2rem;
+    
+    svg {
+      width: clamp(36px, 4vw, 48px);
+      height: clamp(36px, 4vw, 48px);
+    }
+  }
+
+  &__text {
+    font-size: clamp(16px, 1.5vw, 1.125rem);
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__author-image {
+    width: clamp(48px, 5vw, 3.5rem);
+    height: clamp(48px, 5vw, 3.5rem);
+    background-color: #000;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__author-name {
+    font-size: clamp(16px, 1.5vw, 1.125rem);
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__author-role {
+    font-size: clamp(14px, 1.2vw, 0.875rem);
+    color: #666;
+  }
+
+  &__decoration {
+    position: relative;
+    width: 456px;
+    height: 552px;
+
+    @media (max-width: 1024px) {
+      width: 400px;
+      height: 484px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 456/552;
+      margin: 0 auto;
+      max-width: 456px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #002829;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__squares {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__square {
+    position: absolute;
+    width: clamp(120px, 15vw, 200px);
+    height: clamp(120px, 15vw, 200px);
+
+    &--mint {
+      top: 0;
+      right: 0;
+      background-color: #5cecc3;
+    }
+
+    &--white {
+      top: 200px;
+      right: 100px;
+      background-color: #fff;
+
+      @media (max-width: 1024px) {
+        top: 150px;
+        right: 75px;
+      }
+
+      @media (max-width: 768px) {
+        top: 120px;
+        right: 60px;
+      }
+    }
+  }
+} 
